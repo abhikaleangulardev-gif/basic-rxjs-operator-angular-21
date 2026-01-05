@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Sidenavbar } from "./component/sidenavbar/sidenavbar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ Sidenavbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

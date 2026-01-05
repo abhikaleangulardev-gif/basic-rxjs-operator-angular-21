@@ -1,0 +1,26 @@
+<button class="btn btn-primary m-2" (click)="toggleSidebar()">
+  ☰
+</button>
+
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div class="bg-dark text-white p-3 sidebar" [class.closed]="!isSidebarOpen">
+    <h5 class="text-center">Dashboard</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="forkjoin">ForkJoin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/employee">Employee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/settings">Settings</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
