@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center text-success">Search Bar</h4>
+                </div>
+                <div class="card-body">
+                    <input type="text" name="mySearchControl" id="" class="form-control" placeholder="Enter Your Recipe Name..."  [(ngModel)]="mySearchControl"
+  (ngModelChange)="onSearchChange($event)">
+                    {{mySearchControl}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
