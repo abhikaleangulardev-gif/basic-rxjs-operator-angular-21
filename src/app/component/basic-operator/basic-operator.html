@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center text-success">Of Operator</h4>
+                </div>
+                <div class="card-body">
+                    <p>Number of :- {{myValue}}</p>
+                    <ul class="list-group">
+                        @for (value of myCombineArray; track $index) {
+                        <li class="list-group-item">{{value}}</li>
+                        }
+                    </ul>
+                    <ul class="list-group my-3">
+                        <li class="list-group-item">{{myCombineObject.name}}</li>
+                        <li class="list-group-item">{{myCombineObject.age}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center text-success">From Operator</h4>
+                </div>
+                <div class="card-body">
+                    <p>{{myRolls}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center text-success">Take Operator</h4>
+                </div>
+                <div class="card-body">
+                    <p>Timer :- {{myInterval$ | async}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
